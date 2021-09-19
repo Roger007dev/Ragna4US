@@ -1,0 +1,221 @@
+header{
+	
+}
+.letras{
+
+}
+
+@font-face{
+	font-family: "font capa";
+	src: url(../font/FleshWound.woff);
+}
+@font-face{
+	font-family: "font carrossel";
+	src: url(../font/Text.woff);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h3{
+    margin-bottom: .5rem;
+    font-family: "font carrossel";
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 50px;
+}
+
+ .letra h1{
+ 	color: black;
+	font-size: 150px;
+	font-family: "font capa";
+}
+h2.letra{
+ 	color: black;
+	font-size: 80px;
+	font-family: "font capa";
+}
+
+/***************** ANIMAÇAO DA FONTE DA CAPA***************/
+@keyframes flex-capa{
+	from{
+		text-shadow:0px 0px 15px rgba(255,0, 0, 6.9);
+	}
+	to{
+		text-shadow:0px 0px 15px rgba(0,0,255,6.8) ;
+	}
+}
+
+.animacao{
+	animation-name: flex-capa;
+	animation-duration: 5s;
+	animation-iteration-count: 5;
+	animation-delay: 2s;
+}
+
+header .letra h1.animacao{
+	animation-name: flex-capa;
+	animation-duration: 5s;
+	animation-iteration-count: 999;
+	animation-delay: 2s;
+}
+
+
+
+/********************* MENU********************/
+.menu1{ 
+	
+	background-color: black;
+	
+	
+}
+.hover1:hover{
+	
+	text-shadow:0px 0px 15px rgba(255,255,255,1.0);
+}
+
+.divisor{
+	width: 1px;
+	background: #A9A9A9;
+	margin: 12px 15px; /**  configurou a altura total do divisor e o espaços laterais
+	obs: isto fez com que o divisor tivesse um tamanho compativel ao menu**/
+}
+
+/**************************** COR DE FUNDO HOME E BORDAS*********************/
+.cor{
+	padding-top: 2%;
+	padding-bottom: 5%;
+	background: rgba(112,124,144, 0.1);
+}
+
+
+
+/********************* IMAGENS DO CARROSSEL***********************/
+.organize-img{
+	border: 3px solid  rgba(0, 0, 0, 0.3);
+	height: 400px;
+	width: 520px;
+	text-shadow: 0px 0px black;
+}
+
+.carousel-control-next, .carousel-control-prev{
+	
+	width: 5%;
+	
+}
+
+/************* IMAGEM PRA CAPA DE DOWNLOAD ***************/
+
+
+.organize-downolad{
+	border: 3px solid  rgba(0, 0, 0, 0.3);
+	height: 400px;
+	width: 520px;
+	text-shadow: 0px 0px black;
+}
+
+/***************** midia queris/ tamanhos pra diferentes telas*****************/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.letra h1{
+		font-size: 4.0em;
+	}
+
+	h2.letra{
+ 	color: black;
+	font-size: 2.5em;
+	font-family: "font capa";
+	}
+
+	.ordem{
+		order: 3;
+	}
+
+	.organize-img{
+	border: 3px solid  rgba(0, 0, 0, 0.3);
+	height: 180px;
+	width: 270px;
+	text-shadow: 0px 0px black;
+	}
+
+	.organize-downolad{
+	border: 3px solid  rgba(0, 0, 0, 0.3);
+	height: 180px;
+	width: 270px;
+	text-shadow: 0px 0px black;
+}
+	
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.letra h1{
+		font-size: 6.5em;
+	}
+
+	h2.letra{
+ 	color: black;
+	font-size: 3em;
+	font-family: "font capa";
+	}
+
+	.ordem{
+		order: 3;
+	}
+
+	.organize-img{
+	border: 3px solid  rgba(0, 0, 0, 0.3);
+	height: 230px;
+	width: 360px;
+	text-shadow: 0px 0px black;
+	}
+
+	.organize-downolad{
+	border: 3px solid  rgba(0, 0, 0, 0.3);
+	height: 230px;
+	width: 360px;
+	text-shadow: 0px 0px black;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+	.letra h1{
+		font-size: 8.5em;
+	}
+	h2.letra{
+ 	color: black;
+	font-size: 3em;
+	font-family: "font capa";
+	}
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+ }
+
+ /********** FOOTER ******************/
+ footer{
+ 	background: linear-gradient(to right,rgba(0,0,255,0.1), rgba(0,0,0,0.6),rgba(255,0,0,0.1));
+ }
+ footer .container{
+ 	
+ 	
+ }
+
+ .centro{
+ 	text-align: center;
+ }
+ footer a{
+ 	color: black;
+ }
+ footer a:hover{
+ 	color: rgba(255, 255, 255, 1.0);
+ 	text-shadow: 0px 0px 15px black;
+ 	
+ }
